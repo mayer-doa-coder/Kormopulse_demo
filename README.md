@@ -47,9 +47,16 @@ The server will run in demo mode. Use these URLs for quick progress checks:
 
 - `http://localhost:8000/api/health`
 - `http://localhost:8000/api/demo/overview`
+- `http://localhost:8000/api/demo/roadmap`
 - `http://localhost:5173`
 
 Database-backed routes still need MongoDB before real auth, jobs, applications, and messages work end to end.
+
+You can also start the demo API from the root folder:
+
+```bash
+npm run dev:demo-api
+```
 
 ## Configuration
 
@@ -69,3 +76,6 @@ These small commits were added after the first working copy:
 1. `feat(api): add no-database demo overview`
 2. `feat(ui): show project progress on home page`
 3. `docs: document demo-mode progress checks`
+4. `feat(api): add demo roadmap endpoint`
+5. `feat(ui): preview demo jobs on home page`
+6. `chore(demo): add demo api script`

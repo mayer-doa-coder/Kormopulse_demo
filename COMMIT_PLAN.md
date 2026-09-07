@@ -21,6 +21,12 @@ These are intentionally small additions for the next progress update.
    - Add a compact Kormopulse demo checklist section to the home page.
 3. `docs: document demo-mode progress checks`
    - Explain how to check the project without MongoDB.
+4. `feat(api): add demo roadmap endpoint`
+   - Add `/api/demo/roadmap` so the team can show staged project progress from the backend.
+5. `feat(ui): preview demo jobs on home page`
+   - Show featured demo jobs on the home page with an API response and local fallback data.
+6. `chore(demo): add demo api script`
+   - Add a root script and docs for starting the backend demo API quickly.
 
 After committing, connect the new repository to its own remote (not the existing parent repository's remote) and push:
 
