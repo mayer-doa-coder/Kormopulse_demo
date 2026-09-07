@@ -35,8 +35,39 @@ const demoOverview = {
   ],
 };
 
+const demoRoadmap = {
+  currentSprint: "Teacher progress demo",
+  completionTarget: 30,
+  stages: [
+    {
+      name: "Foundation",
+      status: "complete",
+      owner: "Backend and frontend setup",
+    },
+    {
+      name: "Demo mode",
+      status: "complete",
+      owner: "API preview without MongoDB",
+    },
+    {
+      name: "Core workflows",
+      status: "in-progress",
+      owner: "Jobs, dashboards, and applications",
+    },
+    {
+      name: "Database setup",
+      status: "next",
+      owner: "MongoDB connection and seed data",
+    },
+  ],
+};
+
 router.get("/overview", (req, res) => {
   res.status(200).json(demoOverview);
+});
+
+router.get("/roadmap", (req, res) => {
+  res.status(200).json(demoRoadmap);
 });
 
 export default router;
